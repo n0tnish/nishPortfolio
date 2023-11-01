@@ -1,0 +1,38 @@
+/* Univeral Selector */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar */
+img[ alt="logo"] {
+    width: 5rem;
+}
+body {
+    text-align: center;
+}
+
+.slider{
+    width: 90%;
+    scroll-snap-type: x mandatory;
+    margin-inline: auto;
+    animation: sliding 10s linear infinite;
+}
+.slider >* {
+    width: 10rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+@keyframes sliding {
+    from{
+        transform: translateX(100%);
+        width: 100%;
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
