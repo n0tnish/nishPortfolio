@@ -13,7 +13,9 @@ img[ alt="logo"] {
 }
 body {
     text-align: center;
+    
 }
+
 
 .slider{
     width: 90%;
@@ -27,6 +29,9 @@ body {
     object-fit: cover;
     object-position: center;
 }
+
+
+
 @keyframes sliding {
     from{
         transform: translateX(100%);
@@ -36,6 +41,9 @@ body {
         transform: translateX(-100%);
     }
 }
-.experience{
-    justify-content: end;
+
+
+
+#box1, #box2, #box3, #box4, #box5, #box6 {
+    padding-top: 23%;
 }
