@@ -6,14 +6,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* navbar */
+
+/* navbar responsiveness */
 img[ alt="logo"] {
     width: 35%;
     height: 5%;
 }
+
 body {
-    text-align: center;
-    
+    text-align: center;   
+}
+
+body{
+    font-family: 'Lora', serif;
+    background: repeating-linear-gradient( to top,
+    rgb(16, 16, 112) 14%,
+    rgb(162, 214, 162) 50%,
+    rgb(162, 214, 162) 35%
+);
 }
 
 
@@ -42,8 +52,21 @@ body {
     }
 }
 
+.container{ -webkit-transition-delay: 10ms; 
 
-
+}
 #box1, #box2, #box3, #box4, #box5, #box6 {
     padding-top: 23%;
+}
+
+/*.testimonials{
+    width: 20%;
+    scroll-behavior: smooth;
+    margin-inline: auto;
+}
+*/
+
+img[alt='pic']{
+    margin-left: auto;
+    margin-right: auto;
 }
